@@ -1,64 +1,44 @@
 ![IronHack Logo](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_d5c5793015fec3be28a63c4fa3dd4d55.png)
 
-# Project: Statistical Analysis
+# Project: How to become a rich esports gamer as sooner as possible.
 
-## Overview
 
-The goal of this project is for you to practice statistical analysis using the iterative data analysis process on a dataset of your choice. 
+## Content
 
-**You will be working individually for this project**, but we'll be guiding you along the process and helping you as you go. 
+- [Project Description](#project-description)
+- [Workflow](#workflow)
+- [Links](#links)
 
-An example dataset would be [Housing Prices](https://www.kaggle.com/c/house-prices-advanced-regression-techniques/data) dataset we choose for you. You need to download the `train.csv` dataset then use your statistical analysis skills to analyze this dataset. **The goal of your analysis is to identify the most important features of houses that affect the sale prices.**
 
----
+## Project-description
 
-## Technical Requirements
+In this project I am going to practice my statistical analysis knowledge by doing an study around the esports insdustry from the perspective of a prospect esports gamer. 
 
-The technical requirements for this project are as follows:
+My intention is to make a confident decisions in terms of which game and genre should a gamer choose in order to win as many money as possible in the upcoming years. To make that decission I need to reply to several questions: 
 
-* Try to apply everything you have learned so far about data analysis (in creative ways if you can) such as data cleaning, data manipulation, data visualization, and various statistical analysis methods.
+- Is the esports industry actually a industry in awe? 
+- What are the best games and best performing genres?
+    - To answer that, we need to look at the total amount of millions of dollars given by tournaments
+    - The amount of tournaments per year per game and genre to try to calculate the average peak life value per game and genre
+    - What games gives a bigger amount of prizes and which one gives me a bigger probability to win at least a prize?
+- How much time do I have to become a master between a game is released and the first tournament happens?
 
-* Apply the iterative data analysis process -- setting expectations, collecting information, and reacting to data / revising expectations.
+Ultimately, I would like to perform a time series analysis to determine what is the peak in the entire cycle of the game. 
 
-* Conduct your analysis in Jupyter Notebook using Pandas, Numpy, Scipy, Matplotlib, Seaborn, Plotly, and other Python libraries you have learned, as necessary.
+## Workflow
 
-## Necessary Deliverables
+I started looking at datasets, webpages and APIs from where I could take the information from. For the beggining of the project, I opted to use these two datasets from Kaggle.
 
-The following deliverables should be pushed to your Github repo for this project.
+- Esports Earnings 1998 - 2020 https://www.kaggle.com/rankirsh/esports-earnings/notebooks
 
-* **A Jupyter Notebook (statistical-analysis.ipynb)** containing your Python codes, outputs, and data visualizations. Make sure to include explanations for each of your steps in Markdown cells or Python comments.
+After gathering my data, I started with the exploratory data analysis to understand what operations should be made and how should I treat my data. In the end I merged the two datasets available and created some variables such as :
 
-* [optional] A `README.md` file containing any additional information.
+- I created an Awakening variable: it tells  me how many years each game takes to go into the esports industry after the release the date.
+- Prize per person: this variable talks about the amount of prize given on average to the winners of the tournament. 
 
-## Suggested Ways to Get Started
+After doing the EDA and the consequent Data Wrangling I then started with the Data Visualization and relationship between variables and statistical analysis. 
+ 
 
-1. Explore data and understand what the fields mean.
+## Links
 
-1. Examine the relationships between the features in the dataset. Use data visualization techniques to help you gain intuitive understanding of the relationships.
-
-1. Make informed guess on which features should be investigated in depth.
-
-1. Data cleaning & manipulation. Apply the following techniques as appropriate:
-    * Adjust skewed data distribution.
-    * Remove columns with high proportion of missing values.
-    * Remove records with missing values.
-    * Feature selection.
-    * Convert categorical data to numerical.
-
-1. Perform some statistical analysis on the data
-   * Regression analysis (predict some variable values)
-   * Mean difference between groups
-   * Simulation rom derived variable distribution
-   * ...
-
-1. Present your findings in statistical summary and/or data visualizations.
-
-## Project Feedback + Evaluation
-
-* __Technical Requirements__: Did you deliver a project that met all the technical requirements? Given what the class has covered so far, did you build something that was reasonably complex?
-
-* __Creativity__: Did you add a personal spin or creative element into your project submission? Did you incorporate domain knowledge or unique perspective into your analysis.
-
-* __Code Quality__: Did you follow code style guidance and best practices covered in class?
-
-This will be useful as an overall gauge of whether you met the project goals, but __the more important scores are described in the specs above__, which can help you identify where to focus your efforts for the next project!
+Presentation slides: https://www.canva.com/design/DAEJfkTMXsM/2z34leTZyUfVphiqxRtJNQ/edit
