@@ -5,13 +5,13 @@
 
 *Anna Vilardell*
 
-*Data Analytics-Part Time Course | Barcelona October 2020*
+*Data Analytics-Part Time Course | Barcelona June 2020*
 
 
 ## Content
-- [Project Description and Workflow](#project-description)
-- [Organization](#organization)
-- [Links](#links)
+- [Project Description and Workflow](#Project_Description_and_Workflow)
+- [Organization](#Organization)
+- [Links](#Links)
 
 
 ## Project Description and Workflow
@@ -21,16 +21,17 @@
 
 This project is to practice statistical analysis using the iterative data analysis process on a dataset.
 
-The dataset chosen is data of 10k Play Store apps - Direct link to the dataset [here](https://www.kaggle.com/lava18/google-play-store-apps)
+The dataset chosen is data of 10k Play Store apps - Direct link [here](https://www.kaggle.com/lava18/google-play-store-apps)
 
 
 
-### Goal
+**Goal**
 
-**If I would launch an App, what king of App should I go for if it's important to have positives(+) reviews?**
+*If I would launch an App, what king of App should I go for if it's important to have positive(+) reviews?*
 
-Sub questions to respond to get to our conclusion:
-    - Which is the Category & Genre with +intalls, +reviews and +rating?
+Sub questions to respond to get to conclusions:
+
+    - Which is the category & genre with +intalls, +reviews and +rating?
     - What is the target of most popular apps?
     - Is there a positive correlation between ratings and reviews?
     - Is there any statistical significance between reviews of Paid and Free Apps?
@@ -52,10 +53,13 @@ Sub questions to respond to get to our conclusion:
     - Check correlation of all numeric varibales
     - Explor correlation of interesting variables
     - Hypothesis Testing
+
         - **Paid | Free <> reviews: 2samples t test** 
      *¿Is there any statistical significance between reviews of Paid and Free Apps?* 
+
         - **Paid | Free <> ratings: 2samples t test** 
      *¿Is there any statistical significance between ratings of Paid and Free Apps?*
+        
         - **Paid | Free; Rating <> Reviews: Anova** 
      *¿Is there any statistical significance between the different ratings given from reviews of Paid and Free Apps?*
 
@@ -81,6 +85,7 @@ Sub questions to respond to get to our conclusion:
 **Inside this repository you can find:**
 
 Folder with GoogleData
+
     - googleplaystore.csv (used in the project)
     - googleplaystore_user_reviews.csv (willing to use it later to go further with this project)
 
