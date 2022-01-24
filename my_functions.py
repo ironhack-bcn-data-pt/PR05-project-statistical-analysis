@@ -37,3 +37,27 @@ def clear_outliers(df,column):
     #df.drop('is_outlier',inplace=True)
     print(f'processed number of rows: {len(df)}')
 
+
+def bog(alist,blacklist = None):
+    '''takes a string or a list and returns it bag of words. Optional blacklist'''
+    
+    bog_string = ''
+    if isinstance(alist,str):
+        bog_string = alist
+        bog_list = bog_string.split()
+    else:
+        bog_string = reduce((lambda a,b: str(a) + ' ' + str(b)),alist)
+        # quitamos saltos de linea
+        bog_list = bog_string.split()
+    
+    if blacklist:
+        blacklist = list(map((lambda x: str(x)), blacklist))
+        bog_list = [w for w in bog_list if w not in blacklist]
+    
+    bog_dict = {}
+    for i in bog_list:
+        bog_dict[i] = bog_string.count(i)
+    
+    bog_dict_count = dict(sorted(bog_dict.items(),key= lambda x:x[1],reverse=True))
+    return bog_dict_count
+
