@@ -2,65 +2,33 @@
 
 # Project: Statistical Analysis
 
+## Content
+- [Overview](#overview)
+- [Dataset](#dataset)
+- [Fases del análisis](#fasesdelanalisis)
+- [Links](#links)
+
+
 ## Overview
 
-The goal of this project is for you to practice statistical analysis using the iterative data analysis process on a dataset of your choice. 
+El objetivo de este proyecto es detectar con métodos estadísticos las variables que afectan al coste medio y plantilla equivalente para después analizar la proporción de las variables más significativa de H7 con respecto a la media de todos los hospitales.
 
-**You will be working individually for this project**, but we'll be guiding you along the process and helping you as you go. 
+## Dataset
 
-An example dataset would be [Housing Prices](https://www.kaggle.com/c/house-prices-advanced-regression-techniques/data) dataset we choose for you. You need to download the `train.csv` dataset then use your statistical analysis skills to analyze this dataset. **The goal of your analysis is to identify the most important features of houses that affect the sale prices.**
+El dataset utilizado contiene datos de contratación, absentismo y nóminas de  7 hospitales públicos del Institut Català de la Salut para el año 2021. Cada fila es un contrato.
 
-But you can use any other dataset of your interest.
+## Coste anual de personal expresado en coste medio y plantilla equivalente
+Se descompone el coste anual de personal en dos métricas:
+* Plantilla equivalente: es el peso de cada contrato en relación a un trabajador de jornada completa y que ha trabajado todo el año
+* Coste medio = Coste anual / Plantilla equivalente
 
----
+## Fases del análisis
+* Exploración visual de las variables disponibles en relación a la plantilla equivalente y al coste medio.
+* Análisis de correlación entre variables seleccionadas y plantilla equivalente y coste medio para respondes hipótesis planteadas.
+* Análisis de proporciones de H7 con respecto a la media.
+* Conclusiones finales
 
-## Technical Requirements
+## Links
+[Repository](https://github.com/ironhack-bcn-data-pt/PR02-project-pandas/pull/22)
+[Slide in pdf](https://drive.google.com/file/d/1RE_OTbYYwNWRfXUESTbMZMGdBhNPT-zd/view?usp=sharing)
 
-The technical requirements for this project are as follows:
-
-* Try to apply everything you have learned so far about data analysis (in creative ways if you can) such as data cleaning, data manipulation, data visualization, and various statistical analysis methods.
-
-* Apply the iterative data analysis process -- setting expectations, collecting information, and reacting to data / revising expectations.
-
-* Conduct your analysis in Jupyter Notebook using Pandas, Numpy, Scipy, Matplotlib, Seaborn, Plotly, and other Python libraries you have learned, as necessary.
-
-## Necessary Deliverables
-
-The following deliverables should be pushed to your Github repo for this project.
-
-* **A Jupyter Notebook (statistical-analysis.ipynb)** containing your Python codes, outputs, and data visualizations. Make sure to include explanations for each of your steps in Markdown cells or Python comments.
-
-* [optional] A `README.md` file containing any additional information.
-
-## Suggested Ways to Get Started
-
-1. Explore data and understand what the fields mean.
-
-1. Examine the relationships between the features in the dataset. Use data visualization techniques to help you gain intuitive understanding of the relationships.
-
-1. Make informed guess on which features should be investigated in depth.
-
-1. Data cleaning & manipulation. Apply the following techniques as appropriate:
-    * Adjust skewed data distribution.
-    * Remove columns with high proportion of missing values.
-    * Remove records with missing values.
-    * Feature selection.
-    * Convert categorical data to numerical.
-
-1. Perform some statistical analysis on the data
-   * Regression analysis (predict some variable values)
-   * Mean difference between groups
-   * Simulation rom derived variable distribution
-   * ...
-
-1. Present your findings in statistical summary and/or data visualizations.
-
-## Project Feedback + Evaluation
-
-* __Technical Requirements__: Did you deliver a project that met all the technical requirements? Given what the class has covered so far, did you build something that was reasonably complex?
-
-* __Creativity__: Did you add a personal spin or creative element into your project submission? Did you incorporate domain knowledge or unique perspective into your analysis.
-
-* __Code Quality__: Did you follow code style guidance and best practices covered in class?
-
-This will be useful as an overall gauge of whether you met the project goals, but __the more important scores are described in the specs above__, which can help you identify where to focus your efforts for the next project!
